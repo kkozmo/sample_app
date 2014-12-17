@@ -1,7 +1,0 @@
-class StacicPagesController < ApplicationController
-  def home
-  end
-
-  def help
-  end
-end
