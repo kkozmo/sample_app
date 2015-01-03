@@ -21,7 +21,7 @@ class MicropostsInterfaceTest < ActionDispatch::IntegrationTest
       post microposts_path, micropost: { content: content }
     end
     assert_redirected_to root_url
-    follow_redirect!
+    follow_redirect! 
     assert_match content, response.body
     # Delete a post.
     assert_select 'a', text: 'delete'
